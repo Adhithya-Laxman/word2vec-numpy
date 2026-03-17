@@ -13,6 +13,7 @@ def tokenize(text : str) -> list[str]:
     return tokens
 
 def build_vocab(tokens, min_freq=1):
+    """Builds a vocabulary mapping from words to indices and counts."""
     counts = Counter(tokens)
     filtered = [(w, c) for w, c in counts.items() if c >= min_freq] 
     vocab    = {w: i for i, (w, c) in enumerate(filtered)}            
