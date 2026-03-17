@@ -37,7 +37,7 @@ Over time, meaningful semantic and syntactic relationships emerge.
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/word2vec-numpy.git
+git clone https://github.com/Adhithya-Laxman/word2vec-numpy.git
 cd word2vec-numpy
 ```
 
