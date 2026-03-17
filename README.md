@@ -97,6 +97,9 @@ Default hyperparameters can be adjusted in `train.py`:
 ## Demo and Results
 
 All demos (nearest neighbors, word analogies, PCA visualizations, and cosine similarity heatmaps) are available in **`demo.ipynb`**.
+Pre-trained embeddings (`word2vec_embeddings.npy`) and vocabulary 
+(`vocab.pkl`) are included so `demo.ipynb` can be run directly 
+without retraining.
 
 Run the notebook to:
 
