@@ -2,7 +2,7 @@ import numpy as np
 
 def cosine_sim(a : np.ndarray, b : np.ndarray) -> np.ndarray:
     """Computes cosine similarity between a vector and a matrix of vectors.
-        a: shape (d,)
+        a: shape (1, d) or (d,) — query vector
         b: shape (N, d)
     Returns:
         sims: shape (N,) cosine similarities    
@@ -14,7 +14,7 @@ def cosine_sim(a : np.ndarray, b : np.ndarray) -> np.ndarray:
     return dot / (norm_a * norm_b)        
 
 
-def nearest_neighbors(word : str, vocab : dict, idx2word : dict, W : np.ndarray, top_k : int = 5) -> list[str]:
+def nearest_neighbors(word : str, vocab : dict, idx2word : dict, W : np.ndarray, top_k : int = 5):
     """
     Prints the top_k nearest neighbors of a given word based on cosine similarity.
     Args:        
